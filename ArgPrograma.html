@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Titulo-->
+        <title> Portafolio web | Paggi Santiago </title>
+        <!--Favicon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-0F/BwbuUGWUjnTHFvS9Axz1+q1oIn3+G9rP/fiIQfQmVcH83MSS/sVc3Qydz6obQjpttlpwPYLsa6Z0xP1kxGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/favicon/1676134779/favicon.ico">
+        <!--Metadatos-->
+        <meta charset="utf-8">
+        <meta name="author" content="Santiago Paggi">
+        <meta name="description" content="Portafolio web"
+        <meta name="keywords" content="HTML,CSS, JavaScript">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- css-->
+        <link rel="stylesheet"  href="estilos.css">    
+        <!-- Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="C:\Users\Carina\Documents\TPap\ArgPrograma.js"></script>
+    </head>
+    <body>
+        <header> 
+            <div class="logo">
+                <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/favicon/1676134779/favicon.ico" width= "60" height="60px" alt ="Logo A.P" title="Logo ArgP">
+               </a><h5>Argentina Programa #yoprogramo</h5>
+            </div>
+            <nav class="navbar navbar-expand-sm">
+                <nav> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>   
+                </nav> 
+                    <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <a class="navbar-brand">  
+                        </a>
+                        <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href = "https://es-la.facebook.com/santi.paggi/" target="_blank"> Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href = "https://www.instagram.com/santiagopaggi/" target="_blank"> Instagram</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active " href = "https://twitter.com/santiag160415/" target="_blank">twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="log.html"><button class="btn btn-info" type="submit">Iniciar sesión</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>               
+        </header>     
+        <!--banner-->
+        <section id="banner" class="hero">
+            <div class="contenido">
+                <i>
+                    <h2> Bienvenidos al Portafolio web</h2>
+                </i>
+                <h4> Santiago Paggi </h4>
+                <h5> Full Stack Developer Jr </h5>
+                <p>
+                <nav>
+                    <a href="#acerca_de" class="btn btn-light">Sobre mi</a>
+                    <a href="#educacion" class="btn btn-light">Educación</a>
+                    <a href="#hass" class="btn btn-light">H&Skills</a>
+                    <a href="#proyectos" class="btn btn-light">Proyectos</a>
+                </nav>
+                </p>
+            </div>
+        </section>
+        <!-- seccion acerca_de -->
+        <section id="acerca_de">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2"><img id="imagenp" src="C:\Users\Carina\Documents\TPap\imagenes\Fotoyo.jpeg" height="150px" width="150px">
+                        <button class="btn btn-outline-dark" onclick="editarImagen('imagenp')">Editar Imagen</button>
+                    </div>        
+                    <div class="col-md-10">          
+                        <h2> Sobre mi </h2>                  
+                        <p id="miParrafo"> Soy un profesional altamente motivado y apasionado con habilidades sólidas en la programación. Con 2 años de experiencia en el campo, sumando estudios en otros ambitos , he desarrollado un conocimiento profundo de Front y Back-End.
+                            Completé mi educación en el Colegio Nuestra Señora del Huerto y he recibido capacitación adicional en la Facultad de Ciencias Exactas e Ingenieria y Agrimensura.
+                            Mi meta es ser reconocido por mi trabajo y dedicación hacia este rubro y poder contribuir a la comunidad tanto de Ingenieros como de Programadores. 
+                        </p> 
+                        <button class="btn btn-success" onclick="editarParrafo('miParrafo')">Editar párrafo</button>
+                    </div>
+                </div>
+            </div> 
+            <button class="btn btn-delete" onclick="confirmarEliminarSeccion(this)"><strong class="fa fa-times">Eliminar sección</strong></button>
+        </section>                
+           <!--seccion educacion-->
+        <section id="educacion">
+            <h2> Educación </h2>
+            <div class="container-fluid">
+                <div class="row" id="Titulose">
+                    <div class="col-lg-1">
+                        <img id="imagense" src="C:\Users\Carina\Documents\TPap\imagenes\imgcolegio.jpg" width="80">
+                        <button  class="btn btn-outline-dark" onclick="editarImagen('imagense')">Editar Imagen</button>
+                    </div>
+                    <div class="col-lg-11">
+                        <h4><strong>Título Primario </strong></h4> 
+                        <div class="titulo">
+                        <h5 id="t1">Titulo Primario - Colegio Nuestra Señora del Huerto </h5> 
+                        <button class="btn btn-light" onclick="editartitulos('t1')">Editar</button>
+                        </div> 
+                       <ul>
+                            <li id="p1">Fecha de inicio: 2006 </li>
+                            <li id="p2">Fecha de finalización: 2012 </li>
+                            <button class="btn btn-secondary" onclick="editarfechai('p1')">Editar</button>
+                            <button class="btn btn-secondary" onclick="editarfechaf('p2')">Editar</button>
+                        </ul>
+                        <h4><strong>Título Secundario:</strong></h4>
+                        <div class="titulo"> 
+                        <h5 id="t2">Bachiller en Ciencias Naturales- Colegio Nuestra Señora del Huerto </h5>
+                        <button class="btn btn-light" onclick="editartitulos('t2')">Editar</button>
+                        </div>
+                        <ul>
+                            <li id="s1">Fecha de inicio: 2013 </li>
+                            <li id="s2">Fecha de finalizacion: 2018 </li>
+                            <button class="btn btn-secondary" onclick="editarfechai('s1')">Editar</button>
+                            <button class="btn btn-secondary" onclick="editarfechaf('s2')">Editar</button>
+                        </ul>
+                        <p id="miParrafo2"> El Colegio Nuestra Señora del Huerto es una institución ubicada en la provincia Entre Rios
+                            , ciudad Victoria. Se la caracteriza por ser un colegio católico que cuenta con primario (Titulo
+                            Primario) y secundario (Titulos en Bachiller en Economia y Bachiller en Ciencias Naturales). Se
+                            puede obtener más información
+                            <a href="https://huertovictoria.wordpress.com/" target="_blank"> ingresando aquí </a>
+                        </p> 
+                    <button class="btn btn-success" onclick="editarParrafo('miParrafo2')">Editar párrafo</button>
+                    <button class="btn btn-delete" onclick="Eliminartitulo('Titulose')"><i class="fa fa-times">Eliminar titulo</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" id="Tituloc">
+                    <div class="col-lg-1">
+                        <img id="imagenc" src="C:\Users\Carina\Documents\TPap\imagenes\imcultural.png" width="80">
+                        <button class="btn btn-outline-dark" onclick="editarImagen('imagenc')">Editar Imagen</button>
+                    </div>
+                    <div class="col-lg-11">
+                        <h4> <strong>Título de Ingles: </strong> </h4>
+                        <div class="titulo"> 
+                        <h5 id="t3">Maestro elemental de Ingles - La Cultural </h5>
+                        <button class="btn btn-light" onclick="editartitulos('t3')">Editar</button>
+                        </div>
+                         
+                        <ul>
+                            <li id="c1"> Fecha de inicio: 2010 </li> 
+                            <li id="c2"> Fecha de finalización: 2016 </li> 
+                            <button class="btn btn-secondary" onclick="editarfechai('c1')">Editar</button>
+                            <button class="btn btn-secondary" onclick="editarfechaf('c2')">Editar</button>    
+                        </ul>
+                        
+                        <p id="miParrafo3"> La Cultural Inglesa es una institución localizada en Victoria, Entre Rios, que brinda un servicio de
+                            aprendizaje de Inglés avanzado.
+                            Es un servicio de excelencia que ayuda a promover la competencia lingüística. Para más información
+                            <a href="https://www.facebook.com/CulturalinglesaVic/" target="_blank"> ingrese aquí</a>
+                        </p>
+                        <button class="btn btn-success" onclick="editarParrafo('miParrafo3')">Editar párrafo</button>
+                        <button class="btn btn-delete" onclick="Eliminartitulo('Tituloc')"><i class="fa fa-times">Eliminar titulo</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row" id="Titulog">
+                    <div class="col-lg-1">
+                        <img id="imageng" src="C:\Users\Carina\Documents\TPap\imagenes\imfceia.jpg" width="80">
+                        <button class="btn btn-outline-dark" onclick="editarImagen('imageng')">Editar Imagen</button>
+                    </div>
+                    <div class="col-lg-11">
+                        <h4> <strong>Título de grado:</strong></h4>
+                        <div class="titulo"> 
+                        <h5 id="t4"> Título de grado Ingeniero/a industrial - Universidad Nacional de Rosario</h5>
+                        <button class="btn btn-light" onclick="editartitulos('t4')">Editar</button>
+                       </div>
+                        <ul>
+                            <li id="u1"> Fecha de inicio: 2021</li>
+                            <li id="u2"> Fecha de Finalización: En curso</li>
+                            <button class="btn btn-secondary" onclick="editarfechai('u1')">Editar</button>
+                            <button class="btn btn-secondary" onclick="editarfechaf('u2')">Editar</button>
+                        </ul> 
+                        <p id="miParrafo4"> La Facultad de Ciencias Exactas, Ingeniería y Agrimensura (FCEIA) es parte de la Universidad
+                            Nacional de Rosario y actualmente dicta 11 carreras de grado seis de ingeniería, tres licenciaturas
+                            y dos profesorados en ciencias exactas.
+                            Además, su Laboratorio de Informática ofrece cursos abiertos a la comunidad, con orientación general
+                            y específica. Se puede saber más, visitando su página oficial <a
+                                href="https://web.fceia.unr.edu.ar/es/" target="_blank"> aquí</a>
+                        </p>
+                        <button class="btn btn-success" onclick="editarParrafo('miParrafo4')">Editar párrafo</button>
+                        <button class="btn btn-delete" onclick="Eliminartitulo('Titulog')"><i class="fa fa-times">Eliminar titulo</i></button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-delete" onclick="confirmarEliminarSeccion(this)"><strong class="fa fa-times">Eliminar sección</strong></button>
+        </section>
+            <!--sección hass-->
+                <section id="hass">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <h2> Hard & Soft Skills </h2>
+                            <div class="col-md-3">
+                                <div class="circulos" style="--porcentaje: 80">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> CSS 80% </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="circulos" style="--porcentaje: 90">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> HTML 90% </span>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-3">
+                                <div class="circulos" style="--porcentaje: 70">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> Js 70% </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="circulos" style="--porcentaje: 60">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> Java 60% </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h2> Idiomas </h2>
+                            <div class="col-md-4">
+                                <div class="circulos" style="--porcentaje: 100">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> Español 100% </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="circulos" style="--porcentaje: 70">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> Ingles 70% </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="circulos" style="--porcentaje: 30">
+                                    <svg width="150" height="150">
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                        <circle r="65" cx="50%" cy="50%" pathlength="100"> </circle>
+                                    </svg>
+                                    <span> Japones 30% </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-delete" onclick="confirmarEliminarSeccion(this)"><strong class="fa fa-times">Eliminar sección</strong></button>
+                </section>
+            <!--sección proyectos-->
+            <section id="proyectos" class="proyectosR d-flex flex-column">
+                <h3> Proyectos </h3>
+                <p id="miParrafo5"> Durante los últimos meses, he estado trabajando en un proyecto de portafolio web que me ha permitido instruirme
+                    en diferentes ramas de la programación.
+                    Utilicé una combinación de habilidades de diseño y desarrollo para crear una plataforma que refleja mi persona.
+                    Estoy orgulloso/a del resultado final y emocionado de ganas de poder compartirlo con colegas y posibles
+                    empleadores.
+                </p>
+                <button class="btn btn-success" onclick="editarParrafo('miParrafo5')">Editar párrafo</button>
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="proyecto">
+            
+                                <img id="imagenpro" src="C:\Users\Carina\Documents\TPap\imagenes\proyecto1.jpg" alt="Proyecto1">
+                                <button class="btn btn-outline-dark" onclick="editarImagen('imagenpro')">Editar Imagen</button>
+                                <div class="overlay">
+                                    <a href="#">
+                                        <p>Proyecto 1</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-delete" onclick="confirmarEliminarSeccion(this)"><strong class="fa fa-times">Eliminar sección</strong></button>
+            </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

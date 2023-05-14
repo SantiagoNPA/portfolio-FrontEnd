@@ -1,0 +1,128 @@
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+
+}
+#banner{
+    height: 475px;
+    background-color: #F8F9F9 ;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 2%;
+    background-image: url(imagenes/universo.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner .contenido{
+    padding-top: 150px;
+}
+#acerca_de{
+    background-color: #F8F9F9 ;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 2%;
+}
+#acerca_de .col-md-2 img{
+    border-radius: 100%;
+}
+#acerca_de .col-md-10{
+    padding-right:200px; 
+}
+#educacion{
+    background-color: #F8F9F9 ;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 2%;
+}
+
+#hass .row{
+    background-color: #F8F9F9 ;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 2%;
+}
+#hass .row .col-md-3 {   
+    display:flex;
+    text-align: center;
+}
+#hass .row .col-md-4 {   
+    display:flex;
+    text-align: center;
+}
+
+#hass .row .circulos{
+    position: relative;
+    fill: none;
+    stroke-width: 20;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    stroke-dasharray: 100 100;
+    stroke: #AAA;
+    
+}
+circle:nth-child(2){
+    stroke: blue;
+    stroke-dasharray: var(--porcentaje) 100;
+}
+#hass .row span{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 15px/1em verdana;
+
+}
+#proyectos{
+        background-color: #F8F9F9 ;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-right: 15px;
+        border-radius: 2%;
+}
+
+#proyectos img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2%;
+    transition:  all 0.2s ease;
+}
+
+.btn-delete i{
+    font-size: 20px;
+    color: red;
+    width: 100px;
+  }
+  .btn-success{
+    font-size: 20px;
+    color: green;
+    width: 200px
+  }
+ .titulo{
+    display: flex;
+ }
+  .titulo .btn-light{
+    height: 30px;
+    display: flex;
+    text-align: center;
+  }
